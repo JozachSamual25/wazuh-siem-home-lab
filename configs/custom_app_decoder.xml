@@ -1,0 +1,10 @@
+<!-- Copy to: /var/ossec/etc/decoders/local_decoder.xml (Wazuh server) -->
+<decoder name="custom_app">
+  <program_name>custom_app</program_name>
+</decoder>
+
+<decoder name="custom_app_failed">
+  <parent>custom_app</parent>
+  <regex>Failed login for user (\S+) from (\S+)</regex>
+  <order>dstuser, srcip</order>
+</decoder>

@@ -1,0 +1,10 @@
+<!-- Add inside <ossec_config> in /var/ossec/etc/ossec.conf (Wazuh server).
+     Use the rule ID you actually observed for the Hydra brute force.
+     5763 = sshd brute force (valid user), 5712 = sshd brute force (non-existent user).
+     Requires iptables on the server: sudo apt install -y iptables -->
+<active-response>
+  <command>firewall-drop</command>
+  <location>local</location>
+  <rules_id>5763</rules_id>
+  <timeout>180</timeout>
+</active-response>

@@ -1,0 +1,6 @@
+<!-- Add inside <ossec_config> in /var/ossec/etc/ossec.conf (Wazuh server),
+     then: sudo systemctl restart wazuh-manager -->
+<localfile>
+  <log_format>syslog</log_format>
+  <location>/var/log/custom_app.log</location>
+</localfile>

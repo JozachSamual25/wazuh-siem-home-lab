@@ -1,0 +1,7 @@
+# Never commit credentials or generated certificates
+wazuh-install-files.tar
+wazuh-passwords.txt
+*.pem
+*.key
+*.ova
+*.vmdk

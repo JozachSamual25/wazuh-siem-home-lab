@@ -1,0 +1,4 @@
+<!-- Add inside the existing <syscheck> block in /var/ossec/etc/ossec.conf (Wazuh server).
+     Create the directory first: sudo mkdir -p /opt/sensitive_data
+     Then: sudo systemctl restart wazuh-manager -->
+<directories realtime="yes" check_all="yes" report_changes="yes">/opt/sensitive_data</directories>
